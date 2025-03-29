@@ -1,6 +1,12 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Syne:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Use Inter Light for body text */
 body {
     font-family: 'Inter', sans-serif;
@@ -13,33 +19,38 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Syne', sans-serif;
 }
 
 * {
-    background-color: rgb(10, 10, 10);
-    color:rgb(240, 240, 240);
+    /* background-color: rgb(10, 10, 10); */
+    color: rgb(240, 240, 240);
 
 }
 
 header {
     height: 120px;
-    display: flex;             /* Apply Flexbox to the header */
-    justify-content: center;   /* Center nav horizontally */
-    align-items: center;       /* Vertically center the nav */
-    position: fixed;           /* Fix header to the top of the page */
-    top: 0;                    /* Position at the top */
-    left: 0;                   /* Stretch across the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     right: 0;
     width: 100%;
-    background: transparent;   /* Transparent background */
-    z-index: 10;               /* Ensure the header is on top of other elements */
+    background: transparent;
+    z-index: 10;
 }
 
 
 nav {
-    width: 40em; 
+    width: 40em;
     background: transparent;
 }
 
@@ -47,11 +58,11 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  /* Spread items across the width */
+    justify-content: space-between;
     align-items: center;
-    width: 100%;               /* Make sure ul takes up the full width of nav */
-    padding: 0;                /* Remove default padding */
-    margin: 0;                 /* Remove default margin */
+    width: 100%;
+    padding: 0;
+    margin: 0;
     background: transparent;
 }
 
@@ -60,27 +71,33 @@ nav li {
     background: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 90px;
     font-weight: 500;
 }
 
-#hero, #about, #services, #projects, #contact {
+#hero,
+#about,
+#services,
+#projects,
+#contact {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centers the content */
-    align-items: center; /* Horizontally centers the content */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 60vw;
-    margin: 0 auto; /* This centers the section */
+    margin: 0 auto;
 }
-
-
 
 #hero h1 {
     margin: 0;
-    line-height: 1 !important;
+    line-height: 0.8 !important;
 }
 
 #hero .fade-in {
@@ -90,11 +107,13 @@ h1 {
 }
 
 #hero .fade-in:nth-child(1) {
-    animation-delay: 0.5s; /* Delay for the first word */
+    animation-delay: 0.5s;
+    /* Delay for the first word */
 }
 
 #hero .fade-in#tech {
-    animation-delay: 1.5s; /* Delay for 'technology' (1 sec later than 'creativity') */
+    animation-delay: 1.5s;
+    /* Delay for 'technology' (1 sec later than 'creativity') */
 }
 
 @keyframes fadeInDown {
@@ -110,7 +129,7 @@ h1 {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     background-color: transparent;
-    border: 1px solid #333;
+    border: 0.1px solid white;
     border-radius: 30px;
     cursor: pointer;
     text-align: center;
@@ -124,14 +143,13 @@ h1 {
 }
 
 #services-list {
-    display:flex;
+    display: flex;
 }
 
-#services-list .service 
-{
+#services-list .service {
     width: 280px;
     height: 240px;
-    border: 1px solid #333;
+    border: 1px solid white;
     border-radius: 30px;
     margin: 2rem;
     padding: 1rem;
@@ -139,4 +157,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
