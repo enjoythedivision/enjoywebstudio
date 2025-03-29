@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Syne:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Use Inter Light for body text */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    /* background-image: url(./bg.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; */
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+}
+
+* {
+    background-color: rgb(10, 10, 10);
+    color:rgb(240, 240, 240);
+
+}
+
+header {
+    height: 120px;
+    display: flex;             /* Apply Flexbox to the header */
+    justify-content: center;   /* Center nav horizontally */
+    align-items: center;       /* Vertically center the nav */
+    position: fixed;           /* Fix header to the top of the page */
+    top: 0;                    /* Position at the top */
+    left: 0;                   /* Stretch across the full width */
+    right: 0;
+    width: 100%;
+    background: transparent;   /* Transparent background */
+    z-index: 10;               /* Ensure the header is on top of other elements */
+}
+
+
+nav {
+    width: 40em; 
+    background: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  /* Spread items across the width */
+    align-items: center;
+    width: 100%;               /* Make sure ul takes up the full width of nav */
+    padding: 0;                /* Remove default padding */
+    margin: 0;                 /* Remove default margin */
+    background: transparent;
+}
+
+nav li {
+    margin: 0 20px;
+    background: transparent;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 500;
+}
+
+#hero, #about, #services, #projects, #contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto; /* This centers the section */
+}
+
+
+
+#hero h1 {
+    margin: 0;
+    line-height: 1 !important;
+}
+
+#hero .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInDown 2.5s forwards;
+}
+
+#hero .fade-in:nth-child(1) {
+    animation-delay: 0.5s; /* Delay for the first word */
+}
+
+#hero .fade-in#tech {
+    animation-delay: 1.5s; /* Delay for 'technology' (1 sec later than 'creativity') */
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.9s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#services-list {
+    display:flex;
+}
+
+#services-list .service 
+{
+    width: 280px;
+    height: 240px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
