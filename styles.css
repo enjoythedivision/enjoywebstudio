@@ -167,3 +167,11 @@ h1 {
     height: 100%;
     z-index: -1;
 }
+
+.arrow-container {
+    position: fixed;
+    bottom: 50px;  /* Adjust as needed */
+    right: 50px;   /* Adjust as needed */
+    z-index: 1000; /* Keeps it on top */
+  }
+  
