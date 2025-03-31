@@ -7,15 +7,11 @@ html {
 }
 
 
-/* Use Inter Light for body text */
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    /* background-image: url(./bg.webp);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; */
+    max-width: 100%;
+    margin: 0 auto; /* Centers the container */
 
 }
 
@@ -29,9 +25,7 @@ h6 {
 }
 
 * {
-    /* background-color: rgb(10, 10, 10); */
     color: rgb(240, 240, 240);
-
 }
 
 header {
@@ -170,8 +164,7 @@ h1 {
 
 .arrow-container {
     position: fixed;
-    bottom: 50px;  /* Adjust as needed */
-    right: 50px;   /* Adjust as needed */
-    z-index: 1000; /* Keeps it on top */
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
   }
-  
