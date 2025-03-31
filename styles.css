@@ -10,9 +10,6 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    max-width: 100%;
-    margin: 0 auto; /* Centers the container */
-
 }
 
 h1,
@@ -79,7 +76,7 @@ h1 {
 #services,
 #projects,
 #contact {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +142,7 @@ h1 {
     height: 240px;
     border: 1px solid white;
     border-radius: 30px;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
