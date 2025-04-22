@@ -32,13 +32,28 @@
                 <li><a href="#services">services</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#contact">contact</a></li>
-            </ul>
-
-            <div class="language-switch">
+          
+                <!-- Language buttons INSIDE the burger menu (only mobile) -->
+                <li class="lang-mobile">
+                  <div class="language-switch-mobile">
+                    <button class="lang-btn">EN</button>
+                    <button class="lang-btn">GR</button>
+                  </div>
+                </li>
+              </ul>
+          
+              <!-- Language buttons OUTSIDE the menu (for desktop only) -->
+              <div class="language-switch-desktop">
                 <button class="lang-btn">EN</button>
                 <button class="lang-btn">GR</button>
-            </div>
-        </nav>
+              </div>
+          
+              <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </nav>
     </header>
 
 
@@ -50,7 +65,7 @@
             <p>design that makes you look good. code that keeps things running smooth.<br>ENJOY Web Studio blends
                 creative web design with front-end development to deliver websites that are both
                 beautiful and functional. </p>
-            <div class="buttons"><button class="cta-lime">Book a 15-minute call</button>
+            <div class="buttons"><button class="cta-lime">Let's work together</button>
                 <button class="cta-arrow"><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -129,15 +144,14 @@
     <section id="about" class="wrapper">
         <h2 class="title">about</h2>
         <p>Hi! I'm the face behind ENJOY Web Studio, an aspiring web designer and front-end developer based in Greece.
-            This little studio is my passion project, born out of a love for building clean, modern, and user-friendly
+            This little studio is a project born out of a love for building clean, modern, and user-friendly
             digital experiences.
 
             <br><br>My journey into web design wasn’t exactly a straight line. With a background in electrical &
             computer engineering and a creative streak that never quite fit into engineering school, I spent years
-            bouncing between the technical and the artistic. Eventually, I realized I didn’t have to choose. The web
-            lets me do both!
+            bouncing between the technical and the artistic. Eventually, I realized I didn’t have to choose, and that's when I began pursuing web design as a career.
 
-            <br><br>Now, I spend my days designing and developing websites that not only look good but feel good to use.
+            <br><br>Now, I like to spend my time designing and developing websites that not only look good but feel good to use.
             I’m especially drawn to minimal aesthetics, intuitive design, and code that works quietly in the background
             to support the user experience.
 
@@ -146,7 +160,7 @@
 
             <br><br>Let’s build something great together!
         </p>
-        <button class="cta-lime">Book a 15-minute call</button>
+        <button class="cta-lime">Get more information</button>
     </section>
 
     <!--PROJECTS-->
@@ -224,6 +238,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
