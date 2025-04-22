@@ -384,6 +384,10 @@ footer.wrapper {
     margin-top: 20px;
   }
 
+   .language-switch-desktop {
+    display: none !important;
+  }
+
   .nav-links a,
   .lang-btn {
     color: black !important;
