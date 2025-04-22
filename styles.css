@@ -149,8 +149,11 @@ ul {
   font-size: 0.9rem;
   position: absolute;
   bottom: 0;
-  left: 0;
   right: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
 }
 
 #hero-text h1 {
