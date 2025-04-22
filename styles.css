@@ -147,6 +147,8 @@ ul {
   justify-content: space-between;
   padding: 1rem 2rem;
   font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
 }
 
 #hero-text h1 {
