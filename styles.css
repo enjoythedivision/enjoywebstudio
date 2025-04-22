@@ -321,6 +321,10 @@ footer.wrapper {
   display: none;
 }
 
+.container h2 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .nav-links {
