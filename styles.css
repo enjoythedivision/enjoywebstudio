@@ -56,6 +56,22 @@ button.cta-arrow {
   padding: 1rem;
 }
 
+button.cta-lime:hover {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+button.cta-arrow:hover {
+  color: var(--color-primary) /* text color changes */
+}
+
+button.cta-arrow:hover svg path {
+  stroke: var(--color-primary) /* svg stroke changes */
+}
+
+
+
 .cta-outline {
   background-color: transparent;
   border: 1px solid var(--color-primary);
