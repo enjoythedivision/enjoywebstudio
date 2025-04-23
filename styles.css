@@ -460,3 +460,10 @@ footer.wrapper {
   object-fit: cover;
   border-radius: 8px;
 }
+
+
+
+.cta-lime-link {
+  text-decoration: none; /* Remove any link styling */
+  display: inline-block; /* To ensure the button layout remains intact */
+}
