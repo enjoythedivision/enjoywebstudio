@@ -463,7 +463,8 @@ footer.wrapper {
 
 
 
-.cta-lime-link {
-  text-decoration: none; /* Remove any link styling */
-  display: inline-block; /* To ensure the button layout remains intact */
+.cta-lime-link,
+.cta-arrow-link {
+  display: inline-block;
+  text-decoration: none;
 }
