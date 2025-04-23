@@ -418,3 +418,45 @@ footer.wrapper {
     margin-bottom: 2.5rem;
   }
 }
+
+
+.projects-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* medium gap */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-img {
+  height: 250px;
+  background: var(--color-secondary);
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-description {
+  color: #7c7c7c;
+  font-size: 0.95rem;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
