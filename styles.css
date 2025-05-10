@@ -443,7 +443,7 @@ footer.wrapper {
 }
 
 .project-img {
-  height: 250px;
+  height: 350px;
   background: var(--color-secondary);
   border-radius: 8px;
 }
