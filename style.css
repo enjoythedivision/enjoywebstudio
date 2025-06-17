@@ -119,6 +119,7 @@ body {
 .btn.primary {
   background: #ff7119;
   color: #fff;
+  width: fit-content;
 }
 
 /* Hero Bottom */
