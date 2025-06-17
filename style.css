@@ -449,6 +449,7 @@ textarea:focus {
   }
   .hero-bottom {
     justify-content: space-between;
+    padding: 2rem;
   }
 }
 
