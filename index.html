@@ -1,234 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENJOY Web Studio | Web Design & Development</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="cursor.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ENJOY Web Studio | Web Design & Development</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-  <script src="cursor.js"></script>
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="logo">enjoy.</div>
-
-    <input type="checkbox" id="burger-toggle" class="burger-toggle" />
-    <label for="burger-toggle" class="burger-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#services">services</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">get in touch</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <section class="hero">
-    <div class="wrapper">
-      <h1 class="hero-title">
-        web design<br>& web development<br>studio
-      </h1>
-
-      <div class="hero-buttons">
-        <a href="#contact" class="btn primary">let’s work together</a>
-        <a href="#services" class="btn">learn more</a>
-      </div>
-
-      <div class="hero-bottom">
-        <p class="tagline">
-          enjoy web studio blends creative web design<br />
-          with front-end development to deliver websites<br />
-          that are both beautiful and functional.
-        </p>
-
-        <div class="arrow">
-          <svg width="16" height="79" viewBox="0 0 16 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M9 1V0L7 0V1L9 1ZM7.29289 78.7071C7.68342 79.0976 8.31658 79.0976 8.70711 78.7071L15.0711 72.3431C15.4616 71.9526 15.4616 71.3195 15.0711 70.9289C14.6805 70.5384 14.0474 70.5384 13.6569 70.9289L8 76.5858L2.34315 70.9289C1.95262 70.5384 1.31946 70.5384 0.928932 70.9289C0.538408 71.3195 0.538408 71.9526 0.928932 72.3431L7.29289 78.7071ZM8 1H7L7 78H8H9L9 1L8 1Z"
-              fill="#FF7119" />
-          </svg>
-        </div>
-
-      </div>
-
-
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="wrapper">
-      <h2 class="title">projects</h2>
-      <section class="projects-grid">
-        <div class="project-card">
-          <div class="image-container">
-            <img src="images/time2travel.gr.webp" alt="Project 1">
-            <div class="overlay">
-              <div class="project-info">
-                <h3 class="project-title">Time2Travel</h3>
-                <p class="project-category">Web Design, Web Development</p>
-                <p class="project-year">2025</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <a href="https://nomadriders.gr" target="_blank">
-          <div class="project-card">
-            <div class="image-container">
-              <img src="images/nomadriders.webp" alt="Nomad Riders website">
-              <div class="overlay">
-                <div class="project-info">
-                  <h3 class="project-title">Nomad Riders GR</h3>
-                  <p class="project-category">Web Design, Web Development, WordPress</p>
-                  <p class="project-year">2025</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://promousas.gr" target="_blank">
-          <div class="project-card">
-            <div class="image-container">
-              <img src="images/project1.webp" alt="Promousas Accounting Website">
-              <div class="overlay">
-                <div class="project-info">
-                  <h3 class="project-title">Promousas Accounting & Consulting</h3>
-                  <p class="project-category">Web Design, WordPress</p>
-                  <p class="project-year">2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-      </section>
-
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="wrapper">
-      <h2 class="title">services</h2>
-      <section class="services-section">
-        <div class="services-grid">
-          <div class="service-box">
-            <div class="service-number">01</div>
-            <h3>web design</h3>
-            <p>UI/UX design in Figma</p>
-          </div>
-          <div class="service-box">
-            <div class="service-number">02</div>
-            <h3>web development</h3>
-            <p>
-              static websites<br>
-              wordpress development<br>
-              figma to HTML/wordpress
-            </p>
-          </div>
-          <div class="service-box">
-            <div class="service-number">03</div>
-            <h3>e-shop development</h3>
-            <p>using woocommerce</p>
-          </div>
-        </div>
-        <div class="services-cta">
-          <svg width="16" height="79" viewBox="0 0 16 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M9 1V0L7 0V1L9 1ZM7.29289 78.7071C7.68342 79.0976 8.31658 79.0976 8.70711 78.7071L15.0711 72.3431C15.4616 71.9526 15.4616 71.3195 15.0711 70.9289C14.6805 70.5384 14.0474 70.5384 13.6569 70.9289L8 76.5858L2.34315 70.9289C1.95262 70.5384 1.31946 70.5384 0.928932 70.9289C0.538408 71.3195 0.538408 71.9526 0.928932 72.3431L7.29289 78.7071ZM8 1H7L7 78H8H9L9 1L8 1Z"
-              fill="#FF7119" />
-          </svg>
-          <p>learn more</p>
-        </div>
-      </section>
-    </div>
-  </section>
-
-
-  <section id="contact">
-    <div class="wrapper">
-      <h2 class="title">contact</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>Do you have a project in mind? Are you looking for a business partner/web developer to work with you?
-            Fill out the form below and I will get back to you as soon as possible!</p>
-          <ul>
-            <li>hi@enjoywebstudio.gr</li>
-            <li>@enjoywebstudio</li>
-            <li>+30 698 98 97 954</li>
-          </ul>
-        </div>
-        <div class="contact-form">
-          <form class="contact-form" data-netlify="true">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Name" required />
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="E-mail" required />
-            </div>
-            <div class="form-group">
-              <label class="radio-label">I want to...</label>
-              <div class="radio-group">
-                <label><input type="radio" name="intent" value="build" required /> Build my website</label>
-                <label><input type="radio" name="intent" value="collab" /> Work with you</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea name="message" placeholder="Your message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="send-button">
-              <span class="icon">✈️</span> Send
-            </button>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="wrapper">
+  <body>
+    <header class="header">
       <div class="logo">enjoy.</div>
-      <div class="footer-info">
-        <h3>get in touch</h3>
+      <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+      <label for="burger-toggle" class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav">
         <ul>
-          <li>hi@enjoywebstudio.gr</li>
-          <li>@enjoywebstudio.gr</li>
-          <li>+30 698 98 97 954</li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">get in touch</a></li>
         </ul>
-      </div>
-      <div class="footer-navigation">
-        <h3>navigation</h3>
-        <ul>
-          <li>home</li>
-          <li>portfolio</li>
-          <li>services</li>
-          <li>about</li>
-          <li>contact</li>
-        </ul>
-      </div>
-      <div class="footer-title"><span>where creativity meets technology</span></div>
-    </div>
+      </nav>
+    </header>
 
-  </footer>
-
-
-  <div class="custom-cursor"><span>View Project</span></div>
-  <script src="./scripts/cursor.js" defer></script>
-
-</body>
-
+    <section class="hero">
+      <h1 class="hero-title">Temporarily offline.</h1>
+      <p class="hero-subtitle">
+        Just perfecting some pixels on our website. Please check back soon!
+      </p>
+    </section>
+    <div class="custom-cursor"></div>
+    <script src="./scripts/cursor.js" defer></script>
+  </body>
 </html>
