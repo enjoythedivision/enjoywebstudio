@@ -18,7 +18,7 @@
 
 :root {
   --primary-color: #DCFF19;
-  --background-color: #e0e0e0;
+  --background-color: #F2F2F2;
   --text-color: #0d0d0d;
   --primary-font: 'Inter', sans-serif;
   --heading-font: 'ClashDisplay-Variable';
@@ -35,9 +35,17 @@ body {
   display: block;
 }
 
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  margin: 0;
   font-weight: 500;
 }
 
@@ -54,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1600px;
   margin: 0 auto;
   height: 100%;
-  padding: 4rem;
 }
 
 /* === Big title === */
@@ -65,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.05;
   font-weight: 500;
   margin: 0;
-  white-space: nowrap;  /* prevent wrapping */
-  overflow: visible;     /* allow overflow */
+  white-space: nowrap;
+  overflow: visible;
   z-index: 2;
 }
 
@@ -76,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15%;
   display: flex;
   gap: 1.5rem;
+  z-index: 2;
 }
 
 .btn-primary {
@@ -105,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-text {
   position: absolute;
   top: 45%;
-  left: 52%;   /* starts at about halfway */
+  left: 52%;
   width: 40%;
   z-index: 1;
 }
@@ -114,15 +122,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: #000;
 }
 
-.hero-text strong {
-  font-weight: 700;
+section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4rem;
+  min-height: 100vh;
 }
 
-/* === Responsive === */
-/* === Responsive layout under 1024px === */
+h2.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 1024px) {
   .hero {
     height: auto;
@@ -135,13 +148,13 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-content {
     position: static;
-    max-width: 800px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
   }
 
   /* Title */
-  .hero-title {
+  .hero-title, h2.title {
     position: static;
     font-size: clamp(2.8rem, 6vw, 4rem);
     line-height: 1.1;
@@ -154,7 +167,6 @@ h1, h2, h3, h4, h5, h6 {
   .hero-buttons {
     position: static;
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
     margin-bottom: 4rem;
   }
@@ -172,8 +184,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-text {
     position: static;
     width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: 700px;
     text-align: left;
   }
 
