@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1440px;
+  max-width: 1920px;
   width: 100%;
   z-index: 1000;
   padding: 2rem;
