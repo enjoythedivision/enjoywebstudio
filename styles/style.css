@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&display=swap');
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #DCFF19;
+  --background-color: #e0e0e0;
+  --text-color: #0d0d0d;
+  --primary-font: 'Inter', sans-serif;
+  --heading-font: 'ClashDisplay-Variable';
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 350;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin: 0;
+  font-weight: 500;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: #f4f4f4;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 4rem;
+}
+
+/* === Big title === */
+.hero-title {
+  position: absolute;
+  top: 20%;
+  font-size: 6rem;
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;  /* prevent wrapping */
+  overflow: visible;     /* allow overflow */
+  z-index: 2;
+}
+
+/* === Buttons === */
+.hero-buttons {
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-primary {
+  border: 1px solid #000;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  color: #000;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-family: var(--heading-font);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  align-self: center;
+}
+
+/* === Right text === */
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 52%;   /* starts at about halfway */
+  width: 40%;
+  z-index: 1;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.hero-text strong {
+  font-weight: 700;
+}
+
+/* === Responsive === */
+/* === Responsive layout under 1024px === */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: leftenter;
+  }
+
+  .hero-content {
+    position: static;
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* Title */
+  .hero-title {
+    position: static;
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    line-height: 1.1;
+    font-weight: 500;
+    white-space: normal;
+    margin-bottom: 3rem;
+  }
+
+  /* Buttons */
+  .hero-buttons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+  }
+
+  .btn-link {
+    font-size: 1rem;
+  }
+
+  /* Right text becomes centered below */
+  .hero-text {
+    position: static;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .hero-text h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+}
